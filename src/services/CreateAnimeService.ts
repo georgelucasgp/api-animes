@@ -10,7 +10,6 @@ class CreateAnimeService {
 
   async execute(anime: AnimeDTO) {
     const animeAlreadyExists = await this.animeRepository.findById(anime._id);
-
     if (!animeAlreadyExists) await this.animeRepository.create(anime);
   }
 }

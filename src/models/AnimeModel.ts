@@ -11,7 +11,7 @@ const AnimeSchema = new mongoose.Schema(
   },
   {
     versionKey: false,
-  },
+  }
 );
 
 export const AnimeModel = mongoose.model('animes', AnimeSchema);
